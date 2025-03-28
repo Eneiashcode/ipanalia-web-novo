@@ -10,7 +10,7 @@ export default function Carousel() {
     created: (slider) => {
       setInterval(() => {
         slider.next();
-      }, 4000); // Troca a cada 4s
+      }, 4000); // Troca a cada 4 segundos
     },
   });
 
@@ -21,19 +21,21 @@ export default function Carousel() {
   ];
 
   return (
-    <div ref={sliderRef} className="keen-slider mt-4 mx-4">
-      {imagens.map((src, index) => (
-        <div
-          key={index}
-          className="keen-slider__slide overflow-hidden rounded-xl shadow-md"
-        >
-          <img
-            src={src}
-            alt={`Slide ${index + 1}`}
-            className="w-full h-48 object-cover rounded-xl"
-          />
-        </div>
-      ))}
+    <div className="px-4"> {/* Esse padding é a chave para o acabamento aparecer dos dois lados */}
+      <div ref={sliderRef} className="keen-slider">
+        {imagens.map((src, index) => (
+          <div
+            key={index}
+            className="keen-slider__slide overflow-hidden rounded-xl shadow-md"
+          >
+            <img
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-[200px] object-cover rounded-xl"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
