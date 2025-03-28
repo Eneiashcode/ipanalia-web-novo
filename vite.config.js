@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -6,11 +7,6 @@ export default defineConfig({
   preview: {
     port: process.env.PORT || 4173,
     host: '0.0.0.0',
-  },
-  build: {
-    outDir: 'dist',
-  },
-  server: {
-    historyApiFallback: true, // 👈 essencial pra não dar erro 404 nas rotas
+    allowedHosts: ['ipanalia-web-novo.onrender.com'], // 👈 Coloque aqui exatamente o domínio que deu erro
   }
 })
