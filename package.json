@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "keen-slider": "^6.8.6",
+    "lucide-react": "^0.484.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.22.3"
