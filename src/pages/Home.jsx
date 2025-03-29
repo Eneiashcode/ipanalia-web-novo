@@ -71,11 +71,19 @@ export default function Home() {
         </div>
       )}
 
-      {/* Banner Hero */}
-      <section className="bg-[#014F86] text-white text-center py-6 px-4 mt-4 rounded-xl mx-4 shadow-md">
-        <h2 className="text-xl font-bold mb-1">🎥 Culto ao Vivo - Domingo às 18h</h2>
-        <p className="text-sm">Acompanhe no nosso canal do YouTube</p>
-      </section>
+        {/* Destaque de cultos presenciais + Instagram */}
+        <section className="bg-[#014F86] text-white text-center py-6 px-4 mt-4 rounded-xl mx-4 shadow-md">
+          <h2 className="text-xl font-bold mb-1">️ Cultos aos Domingos</h2>
+          <p className="text-sm mb-1"> 10h30 da manhã</p>
+          <p className="text-sm mb-3"> 18h à noite</p>
+          <div className="flex justify-center items-center gap-2 text-sm text-white/90">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+            </svg>
+            <span>Siga-nos no Instagram: <a href="https://www.instagram.com/ip.analia" target="_blank" rel="noreferrer" className="underline hover:text-white">@ip.analia</a></span>
+          </div>
+        </section>
+
 
       {/* Carrossel */}
       <Carousel />

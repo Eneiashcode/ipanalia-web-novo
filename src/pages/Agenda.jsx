@@ -3,15 +3,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const agendaEventos = {
-  "Maio 2024": [
-    { data: "05/05", titulo: "Culto com Ceia", horario: "18h" },
-    { data: "12/05", titulo: "Culto das Mães", horario: "18h" },
-    { data: "18/05", titulo: "Vigília Jovem", horario: "21h" },
+  "Abril 2025": [
+    { data: "04/04", titulo: "Entre Elas", horario: "20h" },
+    { data: "20/04", titulo: "Culto de Pascoa com Cantanta Infantil", horario: "18h" },
+    { data: "27/04", titulo: "Culto com participação do Coral IP V.Mariana", horario: "18h" },
   ],
-  "Junho 2024": [
-    { data: "02/06", titulo: "Culto de Jovens", horario: "18h" },
-    { data: "09/06", titulo: "Escola Bíblica Especial", horario: "10h" },
-    { data: "23/06", titulo: "Retiro Espiritual", horario: "08h às 17h" },
+  "Maio 2025": [
+    { data: "04/05", titulo: "Culto", horario: "18h" },
+    { data: "11/05", titulo: "Culto", horario: "18h" },
+    { data: "18/05", titulo: "Culto", horario: "18h" },
+    { data: "25/05", titulo: "Culto", horario: "18h" },
   ],
 };
 

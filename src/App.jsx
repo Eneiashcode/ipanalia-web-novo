@@ -8,6 +8,7 @@ import PG from "./pages/PG";
 import Agenda from "./pages/Agenda";
 import PedidoOracao from "./pages/PedidoOracao";
 import Materiais from "./pages/Materiais";
+import PedidosRecebidos from "./pages/PedidosRecebidos";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/agenda" element={<Agenda />} />
       <Route path="/pedido-oracao" element={<PedidoOracao />} />
       <Route path="/materiais" element={<Materiais />} />
+      <Route path="/pedidos-recebidos" element={<PedidosRecebidos />} />
     </Routes>
   );
 }
